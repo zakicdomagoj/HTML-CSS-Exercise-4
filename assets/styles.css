@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(#e5edf1, #61a8cc);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  background-color: #fff;
+  width: 500px;
+  height: 550px;
+}
+
+.header {
+  width: 100%;
+  background-color: #2c86cf;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10%;
+}
+
+img {
+  margin-right: 20px;
+}
+
+.name {
+  color: #fff;
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+}
+
+.dot {
+  height: 6px;
+  width: 6px;
+  background-color: #fff;
+  display: inline-block;
+  border-radius: 50%;
+  margin-left: 15px;
+  margin-right: 10px;
+  margin-bottom: 2px;
+}
+
+.line {
+  display: flex;
+  flex-direction: row;
+  color: lightgray;
+  margin-top: 20px;
+}
+
+.wrapper {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.line:before,
+.line:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid lightgray;
+  margin: auto;
+}
+
+.line:before {
+  margin-right: 10px;
+}
+
+.line:after {
+  margin-left: 10px;
+}
+
+.time:nth-of-type(odd) {
+  align-self: flex-start;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-size: 80%;
+  font-weight: 500;
+  color: gray;
+}
+
+.time:nth-of-type(even) {
+  align-self: flex-end;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-size: 80%;
+  font-weight: 500;
+  color: gray;
+}
+
+.message {
+  display: flex;
+}
+
+.message:nth-of-type(even) {
+  padding: 1rem;
+  width: 70%;
+  justify-content: flex-start;
+  color: black;
+  background-color: rgb(201, 230, 253);
+  border-radius: 4px;
+}
+
+.message:nth-of-type(odd) {
+  padding: 1rem;
+  width: 70%;
+  border-radius: 4px;
+  align-self: flex-end;
+  color: black;
+  background-color: lightgray;
+}
+
+.message-blocked {
+  margin-top: 25px;
+  margin-bottom: 20px;
+  padding: 1rem;
+  width: 70%;
+  border-radius: 4px;
+  background-color: lightcoral;
+  align-self: flex-end;
+}
+
+.underline {
+  border: 0.5px solid lightgray;
+  margin-bottom: 20px;
+}
+
+.form-wrapper {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+}
+
+.text {
+  border: none;
+  color: darkgray;
+  font-weight: 500;
+  font-size: 100%;
+}
+
+.text:focus {
+  outline: none;
+}
+
+button {
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  color: #2c86cf;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  padding: 0 1rem;
+}
